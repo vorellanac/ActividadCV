@@ -2,7 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Formulario</title>
+	<title>Formulario CV</title>
+	<meta property="og:title" content="Formulario HTML5 Para mi CV" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://vorellana.github.io/ActividadCv/contacto.html" />
+
+	<meta property="og:image" content="https://mcantillana.github.io/G5_demo_form/image/logo.png" />
+	<meta property="og:image:width" content="https://mcantillana.github.io/G5_demo_form/image/logo.png" />
+
+	<meta name="description" content="Desafio formulario con HTML5">
+	<meta name="author" content="Victor Orellana">
+
 </head>
 <body>
 
@@ -13,12 +23,20 @@
     <label for="nombre">Nombre
 	<input type="text" id="nombre" name="nombre" value="" placeholder="Ingrese su nombre" required="">
     <br>
-    <label for="nombre">Datos de contacto
-	<input type="text" id="nombre" name="nombre" value="" placeholder="Datos de contacto" required="">
-	<br>
-    Fecha de nacimiento <input type="text">
+    <label for="contacto">Datos de contacto
+	<input type="text" id="contacto" name="contacto" value="" placeholder="Datos de contacto" required="">
     <br>
+    
+    <label for="region">Region</label>
+
+   <select name="region" id="region" >
+				<option value="1">Metropolina</option>
+				<option value="2">Chile Continental</option>
+				<option value="3">Sector Norte</option>
+				<option value="4">Sector Sur</option>
+			</select>
     <input type="submit" name="btn" value="Enviar" required="">
+
   </fieldset>
 </form>
 
